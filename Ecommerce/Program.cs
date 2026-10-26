@@ -15,7 +15,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
-//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>(); if we dont want to write the code for
+//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>(); if we d
+//ont want to write the code for
 //each repository we can use unit of work pattern.
 //builder.Services.AddScoped<ICoverTypeRepository, CoverTypeRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
